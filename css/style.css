@@ -1,3 +1,4 @@
+/*default styles for testing and layout purposes*/
 body {
 	/*For testing purposes*/
 	background-color: lightGray;
@@ -13,7 +14,7 @@ div {
 	max-width: 51em;
 	margin-left: auto;
 	margin-right: auto;
-	padding: 1em 0 4em 0;
+	padding: 1em 0 3.5em 0;
 	background-color: white;
 }
 
@@ -41,7 +42,7 @@ div {
 .NavigationBar > li:first-child {
 	/*typography*/
 	font-weight: normal;
-	color: #333333;
+	color: #3E3E3E;
 }
 
 .NavigationBar > li:hover {
@@ -49,4 +50,40 @@ div {
 
 	/*typography*/
 	color: black;
+}
+
+.BackgroundImage {
+	background-image: url('../images/first-background.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 11em 0 12em 0;
+}
+
+.Headline {
+	font-size: 3em;
+	font-weight: lighter;
+	text-align: center;
+	color: white;
+	margin: 0 0 0.5em 0;
+}
+
+.Deck {
+	font-size: 1.5em;
+	font-weight: lighter;
+	text-align: center;
+	color: white;
+}
+
+.Button {
+	background-color: orange;
+	max-width: 9em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.ButtonText {
+	font-size: 1.1em;
+	font-weight: lighter;
+	text-align: center;
+	color: white;
 }
