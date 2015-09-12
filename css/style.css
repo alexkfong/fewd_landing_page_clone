@@ -1,7 +1,52 @@
 body {
+	/*For testing purposes*/
 	background-color: lightGray;
 }
 
 div {
+	/*For testing purposes*/
 	border: 1px solid Chocolate;
+}
+
+/*Setting up the header*/
+.Navigation {
+	max-width: 51em;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 1em 0 4em 0;
+	background-color: white;
+}
+
+.Logo {
+	max-width: 3.25%;
+	float: left;
+}
+
+.NavigationBar {
+	text-align: right;
+	float: right;
+	margin: 0.75em 0 0 0;
+}
+
+.NavigationBar > li {
+	display: inline-block;
+	padding-left: 1.5em;
+
+	/*typography*/
+	letter-spacing: .5px;
+	font-weight: lighter;
+	color: gray;
+}
+
+.NavigationBar > li:first-child {
+	/*typography*/
+	font-weight: normal;
+	color: #333333;
+}
+
+.NavigationBar > li:hover {
+	cursor: pointer;
+
+	/*typography*/
+	color: black;
 }
