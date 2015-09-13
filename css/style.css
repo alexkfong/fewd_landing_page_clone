@@ -77,6 +77,7 @@ div {
 .Button {
 	background-color: orange;
 	max-width: 9em;
+	padding: -0.3em 0.1em 0.1em 0.1em;
 	margin-left: auto;
 	margin-right: auto;
 }
