@@ -1,16 +1,17 @@
 /*default styles for testing and layout purposes*/
 body {
 	/*For testing purposes*/
-	background-color: lightGray;
-}
+/*	background-color: lightGray;
+*/}
 
 div {
 	/*For testing purposes*/
-	border: 1px solid Chocolate;
-}
+/*	border: 1px solid Chocolate;
+*/}
 
-/*Setting up the header*/
-.Navigation {
+/*Shared CSS*/
+.Navigation, 
+.WhatWeDo {
 	max-width: 51em;
 	margin-left: auto;
 	margin-right: auto;
@@ -18,6 +19,7 @@ div {
 	background-color: white;
 }
 
+/*Setting up the header*/
 .Logo {
 	max-width: 3.25%;
 	float: left;
@@ -34,14 +36,15 @@ div {
 	padding-left: 1.5em;
 
 	/*typography*/
+	font-family: 'Roboto', sans-serif;
 	letter-spacing: .5px;
-	font-weight: lighter;
-	color: gray;
+	font-size: 98%;
+	color: #838994;
 }
 
 .NavigationBar > li:first-child {
 	/*typography*/
-	font-weight: normal;
+	font-weight: 500;
 	color: #3E3E3E;
 }
 
@@ -56,35 +59,80 @@ div {
 	background-image: url('../images/first-background.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
-	padding: 11em 0 12em 0;
+	padding: 13em 0 16.5em 0;
 }
 
 .Headline {
+	/*typography*/
+	font-family: 'Roboto', sans-serif;
 	font-size: 3em;
 	font-weight: lighter;
 	text-align: center;
+	letter-spacing: 0.5px;
 	color: white;
 	margin: 0 0 0.5em 0;
 }
 
 .Deck {
+	font-family: 'Roboto', sans-serif;
 	font-size: 1.5em;
 	font-weight: lighter;
 	text-align: center;
+	letter-spacing: 0.5px;
 	color: white;
 }
 
 .Button {
-	background-color: orange;
+	background-color: #F15B2A;
 	max-width: 9em;
-	padding: -0.3em 0.1em 0.1em 0.1em;
+	padding: 0.1em 0.1em 0.1em 0.1em;
 	margin-left: auto;
 	margin-right: auto;
+
+	/*rounded border*/
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px; 
+	-khtml-border-radius: 5px;
 }
 
 .ButtonText {
+	/*typography*/
 	font-size: 1.1em;
-	font-weight: lighter;
+	font-weight: 300;
+	font-family: 'Roboto', sans-serif;
 	text-align: center;
+	letter-spacing: 1px;
 	color: white;
+}
+
+/*What We Do section*/
+.WhatWeDo_Headline {
+	margin: 2em 0 1em 0;
+
+	/*typography*/
+	font-size: 2.8em;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	text-align: center;
+	letter-spacing: 0.1px;
+}
+
+.ThreeIcons {
+	width: 33.2%;
+	margin: 0 -0.3em 0 0;
+	display: inline-block;
+}
+
+.CaptionIcon {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 1.5em;
+	text-align: center;
+}
+
+.Center {
+	max-width: 40%;
+	margin-left: auto;
+	margin-right: auto;
 }
