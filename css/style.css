@@ -138,13 +138,15 @@ nav {
 
 .CaptionIcon {
 	font-family: 'Roboto', sans-serif;
-	font-weight: 300;
+	font-weight: 400;
+	letter-spacing: 0.5px;
 	font-size: 1.5em;
 	text-align: center;
+	color: #3E3E3E;
 }
 
 .Center {
-	max-width: 40%;
+	max-width: 48%;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -156,5 +158,41 @@ p {
 }
 
 .SocialMedia {
-	border_top: 1px lightGray solid;
+	margin-top: 2em;
+	margin-bottom: 3em;
+	border-top: 1px solid #D0D1D0;
+}
+
+.SocialMediaMenu {
+	max-width: 180px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.SocialMediaIcon {
+	width: 42px;
+	height: 42px;
+	border: 1px solid #D0D1D0;
+	margin: 0 0 0 6px;
+	border-radius: 50%;
+	display: inline-block;
+}
+
+.SocialMediaIcon:first-child {
+	margin-left: -6px;
+}
+
+.SocialMediaIcon:hover {
+	border: 1px solid #F13F2A;
+}
+
+.SocialMediaIcon > img {
+	width: 16px;
+	padding: 13px;
+}
+
+.Copyright {
+	font-size: 0.9em;
+	font-weight: 300;
+	color: #D0D1D0;
 }
