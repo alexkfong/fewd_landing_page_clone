@@ -32,15 +32,15 @@ ul {
 }
 
 /*default styles for testing and layout purposes*/
-body {
-	/*For testing purposes*/
-/*	background-color: lightGray;
-*/}
+/*body {
+	For testing purposes
+	background-color: lightGray;
+}
 
 div {
-	/*For testing purposes*/
+	For testing purposes
 	border: 1px solid Chocolate;
-}
+}*/
 
 /*shared classes*/
 .container {
@@ -150,7 +150,7 @@ div {
 
 /*What We Do section*/
 .whatWeDoHeadline {
-	margin: 2rem 0 1rem 0;
+	margin: 2rem 0 2rem 0;
 
 	/*typography*/
 	font-size: 2.8rem;
@@ -163,19 +163,19 @@ div {
 }
 
 .icon {
-	width: 40%;
+	width: 43%;
 	display: block;
 }
 
 .captionIcon {
-	font-size: 1.5em;
+	font-size: 1.6rem;
 	color: #3E3E3E;
 }
 
 /*Footer styles*/
 .socialMedia {
-	margin-top: 2em;
-	margin-bottom: 3em;
+	margin-top: 3rem 0 3rem 0;
+	padding: 3rem 0;
 	border-top: 1px solid #D0D1D0;
 }
 
@@ -187,21 +187,22 @@ div {
 	width: 42px;
 	height: 42px;
 	border: 1px solid #D0D1D0;
+	padding: 11px 0;
 	margin: 0 9px 0 6px;
 	border-radius: 50%;
 	display: inline-block;
+
+	/*transition effects*/
+	-webkit-transition: border 0.3s ease;
+	-moz-transition: border 0.3s ease;
+	-o-transition: border 0.3s ease;
+	transition: border 0.3s ease;
 }
 
 .socialMediaIcon:hover {
 	border: 1px solid #F13F2A;
 }
 
-.socialMediaIcon > img {
-	width: 16px;
-	padding: 13px;
-}
-
-.Copyright {
-	font-size: 0.9em;
+.copyright {
 	color: #D0D1D0;
 }
