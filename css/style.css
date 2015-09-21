@@ -1,198 +1,208 @@
+/*general rules*/
+html {
+	/*Enable box-sizing for current and legacy browsers*/
+	-webkit-box-sizing: border-box;
+  	-moz-box-sizing: border-box;
+  	box-sizing: border-box;
+  	/*Enable anti-aliasing for typography in current browsers*/
+	-webkit-font-smoothing: antialiased;
+}
+
+*, *:before, *:after {
+	/*Enable box-sizing for current and legacy browsers*/
+ 	-webkit-box-sizing: inherit;
+ 	-moz-box-sizing: inherit;
+ 	box-sizing: inherit;
+}
+
+h1, h2, h3, h4, h5, h6, p, li {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	letter-spacing: 0.03rem;
+	text-align: center;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+}
+
+*:hover {
+	cursor: pointer;
+}
+
 /*default styles for testing and layout purposes*/
-body {
-	/*For testing purposes*/
-/*	background-color: lightGray;
-*/}
+/*body {
+	For testing purposes
+	background-color: lightGray;
+}
 
 div {
-	/*For testing purposes*/
-/*	border: 1px solid Chocolate;
-*/}
+	For testing purposes
+	border: 1px solid Chocolate;
+}*/
 
-/*Shared CSS*/
-.Navigation, 
-.WhatWeDo,
-footer {
-	max-width: 51em;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 1em 0 3.5em 0;
+/*shared classes*/
+.container {
+	max-width: 60rem;
+	padding: 1rem 2rem 1rem 2rem;
+}
+
+.center {
+	margin: 0 auto;
 }
 
 /*Setting up the header*/
-nav {
+.topNavigation {
 	width: 100%;
 	position: fixed;
 	background-color: white;
 	border-bottom: 1px solid lightGray;
 }
 
-.Logo {
+.logo {
 	max-width: 3.25%;
-	float: left;
 }
 
-.NavigationBar {
+.navigationBar {
 	text-align: right;
 	float: right;
-	margin: 0.75em 0 0 0;
 }
 
-.NavigationBar > li {
+.navigationBar > li {
+	margin: 0.75rem 0 0 0;
 	display: inline-block;
-	padding-left: 1.5em;
+	padding-left: 1.5rem;
 
 	/*typography*/
-	font-family: 'Roboto', sans-serif;
-	letter-spacing: .5px;
 	font-size: 98%;
 	color: #838994;
+	
+	/*transition effects*/
+	-webkit-transition: color 0.3s ease;
+	-moz-transition: color 0.3s ease;
+	-o-transition: color 0.3s ease;
+	transition: color 0.3s ease;
 }
 
-.NavigationBar > li:first-child {
+.topNavigation .navigationBar > .active {
 	/*typography*/
 	font-weight: 500;
-	color: #3E3E3E;
+	color: #4c5058;
 }
 
-.NavigationBar > li:hover {
-	cursor: pointer;
-
+.topNavigation .navigationBar > li:hover,
+.topNavigation .navigationBar > .active:hover {
 	/*typography*/
 	color: black;
 }
 
-.BackgroundImage {
+/*Header styles*/
+.masthead {
+	color: white;
+}
+
+.backgroundImage {
 	background-image: url('../images/first-background.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
-	padding: 18em 0 16.5em 0;
+	padding: 18rem 0 16.5rem 0;
 }
 
-.Headline {
+.headline {
 	/*typography*/
-	font-family: 'Roboto', sans-serif;
-	font-size: 3em;
-	font-weight: lighter;
-	text-align: center;
-	letter-spacing: 0.5px;
-	color: white;
-	margin: 0 0 0.5em 0;
+	font-size: 3rem;
+	font-weight: 100;
+	margin: 0 0 0.5rem 0;
 }
 
-.Deck {
-	font-family: 'Roboto', sans-serif;
-	font-size: 1.5em;
-	font-weight: lighter;
-	text-align: center;
-	letter-spacing: 0.5px;
-	color: white;
+.deck {
+	font-size: 1.5rem;
+	font-weight: 300;
 }
 
-.Button {
+.button {
 	background-color: #F15B2A;
-	max-width: 9em;
-	padding: 0.1em 0.1em 0.1em 0.1em;
-	margin-left: auto;
-	margin-right: auto;
+	max-width: 8rem;
+	padding: 0.1rem;
 
 	/*rounded border*/
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
 	border-radius: 5px; 
 	-khtml-border-radius: 5px;
+
+	/*transition effects*/
+	-webkit-transition: background-color 0.3s ease;
+	-moz-transition: background-color 0.3s ease;
+	-o-transition: background-color 0.3s ease;
+	transition: background-color 0.3s ease;
 }
 
-.Button:hover {
+.button:hover {
 	background-color: #F13F2A;
-	cursor: pointer;
 }
 
-.ButtonText {
+.buttonText {
 	/*typography*/
-	font-size: 1.1em;
-	font-weight: 300;
-	font-family: 'Roboto', sans-serif;
-	text-align: center;
-	letter-spacing: 1px;
-	color: white;
+	font-size: 1.1rem;
 }
 
 /*What We Do section*/
-.WhatWeDo_Headline {
-	margin: 2em 0 1em 0;
+.whatWeDoHeadline {
+	margin: 2rem 0 2rem 0;
 
 	/*typography*/
-	font-size: 2.8em;
-	font-family: 'Roboto', sans-serif;
+	font-size: 2.8rem;
 	font-weight: 300;
-	text-align: center;
-	letter-spacing: 0.1px;
 }
 
-.ThreeIcons {
-	width: 33.2%;
-	margin: 0 -0.3em 0 0;
+.threeIcons {
+	width: 33%;
 	display: inline-block;
 }
 
-.CaptionIcon {
-	font-family: 'Roboto', sans-serif;
-	font-weight: 400;
-	letter-spacing: 0.5px;
-	font-size: 1.5em;
-	text-align: center;
+.icon {
+	width: 43%;
+	display: block;
+}
+
+.captionIcon {
+	font-size: 1.6rem;
 	color: #3E3E3E;
 }
 
-.Center {
-	max-width: 48%;
-	margin-left: auto;
-	margin-right: auto;
-}
-
 /*Footer styles*/
-p {
-	font-family: 'Roboto', sans-serif;
-	text-align: center;
-}
-
-.SocialMedia {
-	margin-top: 2em;
-	margin-bottom: 3em;
+.socialMedia {
+	margin-top: 3rem 0 3rem 0;
+	padding: 3rem 0;
 	border-top: 1px solid #D0D1D0;
 }
 
-.SocialMediaMenu {
+.socialMediaMenu {
 	max-width: 180px;
-	margin-left: auto;
-	margin-right: auto;
 }
 
-.SocialMediaIcon {
+.socialMediaIcon {
 	width: 42px;
 	height: 42px;
 	border: 1px solid #D0D1D0;
-	margin: 0 0 0 6px;
+	padding: 11px 0;
+	margin: 0 9px 0 6px;
 	border-radius: 50%;
 	display: inline-block;
+
+	/*transition effects*/
+	-webkit-transition: border 0.3s ease;
+	-moz-transition: border 0.3s ease;
+	-o-transition: border 0.3s ease;
+	transition: border 0.3s ease;
 }
 
-.SocialMediaIcon:first-child {
-	margin-left: -6px;
-}
-
-.SocialMediaIcon:hover {
+.socialMediaIcon:hover {
 	border: 1px solid #F13F2A;
 }
 
-.SocialMediaIcon > img {
-	width: 16px;
-	padding: 13px;
-}
-
-.Copyright {
-	font-size: 0.9em;
-	font-weight: 300;
+.copyright {
 	color: #D0D1D0;
 }
